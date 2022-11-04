@@ -1,24 +1,32 @@
 package org.example.model;
 
-//@Creatable
+import org.example.initializers.annotations.Creatable;
+import org.example.initializers.annotations.DefaultConstructor;
+import org.example.initializers.annotations.FieldValue;
+import org.example.initializers.annotations.InitializationMethod;
+
+@Creatable
 public class Person {
 
+    @FieldValue(intValue = 5)
     private int id;
 
-    //@FieldValue(stringValue = "jan")
+    @FieldValue(stringValue = "jan")
     private String name;
+    @FieldValue
     private String surname;
 
-    //@DefaultConstructor
+    @DefaultConstructor
     public Person(){}
 
-    public Person(int id, String name, String surname) {
+
+    public Person(int id,@FieldValue(stringValue = "jan") String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;
     }
 
-    //@InitializationMethod
+    @InitializationMethod
     public void initializePerson(){
         this.id = -1;
         this.name = "";
