@@ -15,6 +15,16 @@ import java.util.stream.Collectors;
 
 public class ObjectCreator {
 
+    /**
+         W Javie, aby zadeklarować metodę generyczną, 
+        należy określić typ generyczny w jej sygnaturze. 
+        Typ generyczny zazwyczaj jest określony w nawiasach ostrokątnych < > 
+        przed typem zwracanym metody. Parametr Typu powinien być użyty w parametrach metody, 
+        aby móc określić ten typ przy wywołaniu metody tzn.
+            Person person = ObjectCreator.create(Person.class);
+            Car car = ObjectCreator.create(Car.class);
+    */
+
     public static <T> T create(Class<T> clazz) throws InvocationTargetException, InstantiationException, IllegalAccessException {
         
         T instance = null;
