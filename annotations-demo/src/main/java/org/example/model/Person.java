@@ -6,7 +6,7 @@ import org.example.initializers.annotations.FieldValue;
 import org.example.initializers.annotations.InitializationMethod;
 
 //@Creatable
-public class Person {
+public class Person implements IHaveId{
 
     //@FieldValue(intValue = 5)
     private int id;
@@ -33,10 +33,12 @@ public class Person {
         this.surname= "";
     }
 
+    @Override
     public int getId() {
         return id;
     }
 
+    @Override
     public void setId(int id) {
         this.id = id;
     }
