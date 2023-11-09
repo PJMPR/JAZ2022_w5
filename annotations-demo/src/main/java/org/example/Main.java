@@ -9,10 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 public class Main {
     public static void main(String[] args) throws InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        var person = ObjectCreator.create(Person.class);
+       //var person = ObjectCreator.create(Person.class);
 
-        var car = ObjectCreator.create(Car.class);
+        //var car = ObjectCreator.create(Car.class);
 
-        System.out.println("Hello world!");
     }
 }

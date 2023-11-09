@@ -3,13 +3,13 @@ package org.example.model;
 import org.example.initializers.annotations.Creatable;
 import org.example.initializers.annotations.FieldValue;
 
-@Creatable
+//@Creatable
 public class Car {
 
-    @FieldValue(intValue = 12)
+    //@FieldValue(intValue = 12)
     int carId;
 
-    @FieldValue(stringValue = "GD00001")
+    //@FieldValue(stringValue = "GD00001")
     String regNumber;
 
     public int getCarId() {

@@ -5,18 +5,18 @@ import org.example.initializers.annotations.DefaultConstructor;
 import org.example.initializers.annotations.FieldValue;
 import org.example.initializers.annotations.InitializationMethod;
 
-@Creatable
+//@Creatable
 public class Person {
 
-    @FieldValue(intValue = 5)
+    //@FieldValue(intValue = 5)
     private int id;
 
-    @FieldValue(stringValue = "jan")
+    //@FieldValue(stringValue = "jan")
     private String name;
-    @FieldValue
+    //@FieldValue
     private String surname;
 
-    @DefaultConstructor
+   //@DefaultConstructor
     public Person(){}
 
 
@@ -26,7 +26,7 @@ public class Person {
         this.surname = surname;
     }
 
-    @InitializationMethod
+    //@InitializationMethod
     public void initializePerson(){
         this.id = -1;
         this.name = "";
